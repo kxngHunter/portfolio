@@ -1,0 +1,67 @@
+#skills {
+  background-color: $white;
+
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  top: -150px;
+  @include breakpoint-down(medium) {
+    width: 90%;
+  }
+  i {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: $red;
+    font-size: 4rem;
+    display: block;
+  }
+  h1 {
+    color: $darkBlue;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  h2 {
+    font-family: "Merriweather", serif;
+    color: $red;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+  }
+  p {
+    color: $darkBlue;
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3rem;
+  }
+  ul > li {
+    color: $darkBlue;
+    font-size: 0.9rem;
+  }
+  ul > li:not(:last-child) {
+    padding-bottom: 0.5rem;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .row > div:not(:last-child) {
+    border-right: 1px solid $grey;
+    @include breakpoint-down(medium) {
+      border-right: none;
+      border-bottom: 1px solid $grey;
+    }
+  }
+  .row > .col-sm-12.col-lg {
+    @include breakpoint-down(medium) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

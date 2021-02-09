@@ -1,0 +1,64 @@
+#contact {
+  background-color: $red;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  h1 {
+    padding-bottom: 1rem;
+    color: $white;
+  }
+  p {
+    color: $white;
+  }
+  form {
+    margin: 3rem 0;
+    .inline > input {
+      max-width: 23.5%;
+      display: inline;
+      margin-bottom: 1rem;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    input {
+      background-color: $white;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      border: none;
+    }
+    textarea {
+      background-color: $white;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+      margin-bottom: 1rem;
+    }
+    @include breakpoint-down(medium) {
+      input,
+      textarea {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      textarea {
+        height: 15%;
+      }
+      .inline > input {
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

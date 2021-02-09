@@ -1,0 +1,59 @@
+html {
+  font-size: 100%;
+  box-sizing: content-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Merriweather", serif;
+  font-size: $font-med;
+  color: $grey;
+  background-color: $blue;
+  width: 100%;
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
+}
+.btn-custom {
+  background-color: transparent;
+  color: $red;
+  padding: 0.5rem 0.5rem;
+  &:hover {
+    background-color: $red;
+  }
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+.container-fluid {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
